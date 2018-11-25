@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans" rel="stylesheet"> 
+        <link rel="stylesheet" tyle="text/css" href="./css/style.css">
+        <meta charset="UTF-8"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            function goNext(path){
+                console.log("Start")
+                document.querySelector(path).scrollIntoView({ 
+                    behavior: 'smooth' 
+                });
+            };
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <section id="start" class="content-section start">
+                    <div class="left-sidebar" onclick="goNext('.contact')"></div>
+                    <div class="content">
+                        <div class="centered-box">
+                            <span class="start-text">Hi i'm Przemek. You can meet me here</span> 
+                        </div>
+                    </div>
+                    <div class="right-sidebar" onclick="goNext('.about-me')"></div>
+            </section>
+            <!-- NEXT -->
+            <section id="about" class="content-section about-me">
+                <div class="left-sidebar" onclick="goNext('.start')"></div>
+                <div class="content about-content">
+                    <h1>About me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras laoreet est eu molestie tincidunt. 
+                        Praesent efficitur diam eget augue pretium, id imperdiet nisi aliquam. Maecenas a sodales ex, ut eleifend enim. 
+                        Vivamus eros leo, ultrices in maximus sit amet, tempor ullamcorper quam. Vivamus elit risus, lacinia et dui ac, convallis ullamcorper purus.</p> 
+                        <p>Sed non fermentum turpis. Donec faucibus, dui et bibendum varius, lorem nunc mattis metus, eu cursus turpis velit quis libero. Curabitur vestibulum gravida ullamcorper. 
+                        Nunc non nulla nec turpis porttitor egestas nec sed ante. Phasellus pretium est at neque gravida, id fringilla nibh accumsan. 
+                        Fusce convallis rutrum finibus. Duis pulvinar malesuada libero, at commodo mauris elementum vel. 
+                        Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                </div>
+                <div class="right-sidebar" onclick="goNext('.projects')"></div>
+            </section>
+            <!-- NEXT -->
+            <section class="content-section projects">
+                <div class="left-sidebar" onclick="goNext('.about-me')"></div>
+                    <div class="content">
+                        <h1>Projects</h1>
+                        <div class="projects-wrapper">
+                            <div class="projects-element">
+                                <img class="project-photo" src="./img/project1.png" />
+                            </div>
+                            <div class="projects-element">
+                                <img class="project-photo" src="./img/project2.png" />
+                            </div>
+                            <div class="projects-element">
+                                <img class="project-photo" src="./img/project3.png" />
+                            </div>
+                            <div class="projects-element">
+                                <img class="project-photo" src="./img/project4.png" />
+                            </div>
+                            <div class="projects-element">
+                                <img class="project-photo" src="./img/project5.png" />
+                            </div>
+                            <div class="projects-element">
+                                <img class="project-photo" src="./img/project6.png" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-sidebar" onclick="goNext('.skills')"></div>
+            </section>
+            <section class="content-section skills">Umiejętności
+                <div class="left-sidebar" onclick="goNext('.projects')"></div>
+                <div class="content">
+                    <h1>Skills</h1>
+                    <ul>
+                        <li>Java średnio-zaawansowanie</li>
+                        <li>Angular średnio zaawansowane</li>
+                        <li>Javascript (ES6) Zaawansowany</li>
+                        <li>HTML, CSS Zaawansowany</li>
+                        <li>SASS</li>
+                        <li>Git</li>
+                        <li>linux commands</li>
+                    </ul>
+                </div>
+                <div class="right-sidebar" onclick="goNext('.more')"></div>
+            </section>
+            <!-- <section class="content-section more">More
+                    <div class="moveButton right-button" onclick="goNext('.contact')">
+                        <img class="arrow-icon" src="./img/arrow-32-64.png">
+                    </div>
+                    <div class="moveButton left-button" onclick="goNext('.skills')">
+                        <img class="arrow-icon" src="./img/arrow-96-64.png">
+                    </div>
+            </section>
+            <section class="content-section contact">Kontakt
+                    <div class="moveButton right-button" onclick="goNext('.about-me')">
+                        <img class="arrow-icon" src="./img/arrow-32-64.png">
+                    </div>
+                    <div class="moveButton left-button" onclick="goNext('.more')">
+                        <img class="arrow-icon" src="./img/arrow-96-64.png">
+                    </div>
+            </section> -->
+        </div>
+
+                <!-- <header>
+            <nav>
+                <ul class="nav-bar">
+                    <li class="nav-bar-element"><a class="nav-bar-element-link" href="#">O mnie</a></li>
+                    <li class="nav-bar-element"><a class="nav-bar-element-link" href="#">Projekty</a></li>
+                    <li class="nav-bar-element"><a class="nav-bar-element-link" href="#">Umiejętności</a></li>
+                    <li class="nav-bar-element"><a class="nav-bar-element-link" href="#">More</a></li>
+                    <li class="nav-bar-element"><a class="nav-bar-element-link" href="#">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header> -->
+        
+            
+    </body>
+</html>
